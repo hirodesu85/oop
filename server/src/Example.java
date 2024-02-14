@@ -1,9 +1,13 @@
 import java.util.*;
 public class Example {
   public static void main(String[] args) {
-    Set<String> set = new HashSet<String>();
-    List<String> list = new LinkedList<String>();
-    Scanner input = new Scanner(System.in);
-    for (String s : args) { System.out.println(s); } 
+    List<String> list = new ArrayList<String>();
+    list.add("A");
+    list.add("B");
+    list.add("A");
+    System.out.println(list.get(0));
+    for (String s : list) {
+      System.out.println(s);
+    }
   }
 }
